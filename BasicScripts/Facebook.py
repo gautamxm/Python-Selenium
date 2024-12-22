@@ -13,12 +13,13 @@ beforemail = driver.find_elements(By.XPATH,"//input[@name='email']/parent::div/p
 aftermail = driver.find_elements(By.XPATH,"//input[@name='email']/parent::div/following::*")
 time.sleep(5)
 
-print(len(beforemail)+ len(aftermail))   #213
+print(len(beforemail))   # 71
+print(len(aftermail))    # 142
 
-for i in beforemail:
-    print(i.tag_name,end=",")
-
-for i in aftermail:
-    print(i.tag_name,end=",")
+# for i in beforemail:
+#     print(i.tag_name,end=",")
+#
+# for i in aftermail:
+#     print(i.tag_name,end=",")
 
 
